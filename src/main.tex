@@ -3,13 +3,23 @@
 
 % Preamble
 \documentclass[12pt]{report}
-\usepackage{amsmath,geometry,setspace, enumerate,pdfpages,mathrsfs,hyperref,csquotes,graphicx,amsfonts,pdfpages}
+\usepackage{amsmath,setspace, enumerate,pdfpages,mathrsfs,hyperref,csquotes,graphicx,amsfonts,pdfpages}
 \usepackage[british]{babel}
+
+
+\usepackage[left=4cm, right=2cm, top=1.5cm, bottom=2cm, footskip=1cm]{geometry}
+
+
+
+
 \usepackage[round]{natbib}
 \bibliographystyle{plainnat}
 \doublespacing
 \setlength\parindent{24pt}
 \setcounter{tocdepth}{3}
+
+
+
 
 
 
@@ -105,43 +115,127 @@ This data was downloaded as a .csv file and opened and used in a separate Micros
 \section*{\underline{United}}
 \addcontentsline{toc}{section}{United}
 \subsection*{Results:}
+
 \begin{enumerate}
+
+ \setlength{\itemsep}{1.5cm}
+
     \item[\underline{Travel Restriction:}]
         \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
+            \item[$R^2$]:0.000228861834340414
+            \item[]
+                \begin{tabular}{|c|c|c|}
+                    \toprule
+                    \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\ \hline
+                    Intercept & 44.05034022 & 26.57321 \\ \hline
+                    Travel restrictions: (Worldwide) & -0.016831773 & -0.22796 \\ \hline
+                    \bottomrule
+                \end{tabular}
+
+
+
+
         \end{enumerate}
+
     \item[\underline{Boeing Plane:}]
         \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
+            \item[$R^2$]:0.0404118785880056
+            \item[]
+                \begin{tabular}{|c|c|c|}
+                    \toprule
+                  \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\ \hline
+                    Intercept & 37.1785385 & 14.12866 \\ \hline
+                    Boeing Planes: (Worldwide) & 0.466640789 & 3.091897 \\ \hline
+                    \bottomrule
+                \end{tabular}
+
+
+
+
         \end{enumerate}
+
     \item[\underline{Airbus Plane:}]
+ \begin{samepage}
+
         \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
+            \item[$R^2$]:0.0523257683902291
+            \item[]
+                \begin{tabular}{|c|c|c|}
+                    \toprule
+                    \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\ \hline
+                    Intercept & 28.72404437 & 6.337401 \\ \hline
+                    Airbus Planes: (Worldwide) & 0.447526254 & 3.540309 \\ \hline
+                    \bottomrule
+                \end{tabular}
+
         \end{enumerate}
+\end{samepage}
     \item[\underline{Pilot Strike:}]
+ \begin{samepage}
+
+
         \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
+            \item[$R^2$]:0.00287928612774552
+            \item[]
+                \begin{tabular}{|c|c|c|}
+                    \toprule
+                    \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\ \hline
+                    Intercept & 28.72404 & 6.337401 \\
+                    \hline
+                    Airbus Planes: (Worldwide) & 0.447526 & 3.540309 \\
+                    \hline
+                    \bottomrule
+                \end{tabular}
+
         \end{enumerate}
+\end{samepage}
+
     \item[\underline{Terrorism:}]
         \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
-        \end{enumerate}
+            \item[$R^2$]:0.0402131821296853
+        \item[$$]\begin{tabular}{|c|c|c|}
+                    \toprule
+                    \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\
+                    \hline
+                    Intercept & 55.2510955 & 13.91841535 \\
+                    \hline
+                    Terrorism: (Worldwide) & -0.554865742 & -3.083967258 \\
+                    \hline
+                    \bottomrule
+                \end{tabular}
+
+    \end{enumerate}
     \item[\underline{All:}]
-        \begin{enumerate}
-            \item[$R^2$]:
-            \item[Coefficient Value]:
-            \item[Coefficient t-stat]:
-        \end{enumerate}
+ \begin{samepage}
+
+    \begin{enumerate}
+        \item[$R^2$]:$0.0959168016513023$
+        \item[]
+
+
+            \item[$$]\begin{tabular}{|c|c|c|}
+                    \toprule
+                    \hline
+                    \underline{Variables} & \underline{Coefficients} & \underline{t Stat}\\
+                    Intercept & 41.49977217 & 5.907597 \\ \hline
+                    Travel restrictions: (Worldwide) & -0.012572928 & -0.15774 \\ \hline
+                Boeing Planes:(Worldwide) & 0.096819445 & 0.405284 \\ \hline
+                Airbus Planes:(Worldwide) & 0.361107231 & 1.714364 \\ \hline
+                Pilot Strike:(Worldwide) & 0.101911033 & 0.835305 \\ \hline
+                Terrorism:(Worldwide) & -0.582516321 & -3.08929 \\ \hline
+                \bottomrule
+            \end{tabular}
+
+
+
+
+    \end{enumerate}
+\end{samepage}
 \end{enumerate}
 \subsection*{Interpretation:}
 
